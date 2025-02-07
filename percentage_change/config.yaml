@@ -1,0 +1,29 @@
+data_processing:
+  change_column: 涨跌幅
+  convert_percentage: true
+
+category_config:
+  bins: [-100, -20, -10, -3, 0, 3, 10, 20, 100]
+  labels: [
+    'Down >20%',          # 跌幅20%以上
+    'Down 10%-20%',       # 跌幅10%-20%
+    'Down 3%-10%',        # 跌幅3%-10%
+    'Down 0%-3%',         # 跌幅0%-3%
+    'Up 0%-3%',           # 涨幅3%以内
+    'Up 3%-10%',          # 涨3%-10%之间
+    'Up 10%-20%',         # 涨10%-20%之间
+    'Up >20%'             # 涨幅20%以上
+  ]
+
+visualization:
+  enabled: true  # 是否生成可视化
+  chart_type: bar  # 图表类型
+  title: Distribution of A-share Price Changes
+  x_label: Price Change Range
+  y_label: Stock Count
+  rotation: 45  # x轴标签旋转角度
+  save_path: stock_percentage_change.png  # 保存路径
+
+output:
+  save_csv: false  # 是否保存CSV
+  csv_path: stock_percentage_change_stats.csv
