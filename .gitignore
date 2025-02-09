@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 *.log
 *.png
+
+# 输出的结果文件，csv 之类的
+*/output
+# 缓存文件，pkl 之类的
+*/cache

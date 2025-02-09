@@ -1,0 +1,18 @@
+# 数据保持配置
+output:
+  save_all_concepts: true
+  directory: "./output"
+  format: "csv"
+  all_concept_file_name: "东方财富概念板块"
+
+# 缓存配置
+cache:
+  enalbed: true
+  directory: "./cache"
+  expire_seconds: 3600
+
+# 默认监控的板块
+default_concepts:
+  - 低空经济
+  - 数字货币
+
