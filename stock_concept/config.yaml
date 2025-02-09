@@ -9,10 +9,9 @@ output:
 cache:
   enalbed: true
   directory: "./cache"
-  expire_seconds: 3600
+  expire_seconds: 43200 # 12h
 
 # 默认监控的板块
 default_concepts:
   - 低空经济
   - 数字货币
-
